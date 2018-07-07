@@ -1,0 +1,39 @@
+a.btn{
+  font-family: "Oswald ", sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 8px 10px;
+
+  @media (max-width: $site-width-small){
+    padding: 12px 15px;
+    line-height: 3.8em !important;
+  }
+  
+  color: $primary-color !important;
+  border-radius: 5px;
+  background-color: #fafafa;
+  font-size: 1.2em;
+  box-shadow: 2px 2px rgba($primary-color, 0.5);
+
+  &:hover{
+    box-shadow: 1px 1px 0 rgba($primary-color, 0.25);
+    color: $primary-color;
+    text-decoration: none;
+    background-color: #fafafa - #111;
+  }
+
+  &,
+  &:hover{
+    transition: background-color 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+  }
+
+  &, &-link{
+    white-space: nowrap;
+    line-height: 3em;
+    margin-right: 0.5em;
+  }
+
+  &-link{
+    text-decoration: underline;
+  }
+}

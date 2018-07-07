@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  background: #3bb0da;  
+}
+
+pre code{
+  font-size: 1.2em;
+  display:inline-block;
+  line-height: 1.5em;
+}
+
+img{
+  max-width: 100%;
+}
+
+.hero-image{
+  text-align: center;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, h7,
+p, ul, ol, pre code{
+  max-width: $max-content-width;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 0 1rem;
+}
+
+ul, ol{
+  padding: 0 1rem 0 2rem;
+}
+
+main{
+  overflow: auto;
+  padding-bottom: $footer-height;
+  & > .container-fluid{
+    min-height: 100%;  
+  }
+}
+
+.sortable thead th{
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<div class="container-fluid container-header">
+  <h1>
+    Donation match<br/>party <span class="nowrap">💸🎉</span>
+  </h1>
+</div>
+<section class="container">
+<table class="table table-light table-striped sortable">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Cause</th>
+      <th scope="col">Match</th>
+      <th scope="col">More info</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.cause}}</td>
+      <td sorttable_customkey="{{this.max_match_num}}">{{this.max_match}}</td>
+      <td>
+        <ul>
+          {{#each this.urls}}
+            <li>
+              <a href="{{this.url}}">{{this.title}}</a>
+            </li>
+          {{/each}}
+        </ul>
+      </td>
+    </tr>
+    {{/each}}  
+  </tbody>
+</table>
+</section>
